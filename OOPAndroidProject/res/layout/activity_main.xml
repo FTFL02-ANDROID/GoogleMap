@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/revname"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context="sam.limo.oopandroidproject.MainActivity" >
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/mainhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextFirstName"
+        android:layout_alignRight="@+id/EditTextFirstName"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="@string/headmain"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/EditTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mainhead"
+        android:ems="10"
+        android:hint="@string/first" />
+
+    <EditText
+        android:id="@+id/EditTextMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextFirstName"
+        android:layout_alignRight="@+id/EditTextFirstName"
+        android:layout_below="@+id/EditTextFirstName"
+        android:ems="10"
+        android:hint="@string/middle" />
+
+    <EditText
+        android:id="@+id/EditTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextMiddleName"
+        android:layout_alignRight="@+id/EditTextMiddleName"
+        android:layout_below="@+id/EditTextMiddleName"
+        android:ems="10"
+        android:hint="@string/last" />
+
+    <Button
+        android:id="@+id/showfullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/EditTextLastName"
+        android:layout_below="@+id/EditTextLastName"
+        android:onClick="Show"
+        android:text="@string/show" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="Next"
+        android:text="@string/next" />
+
+    <TextView
+        android:id="@+id/reversename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullname"
+        android:layout_below="@+id/fullname"
+        android:layout_marginTop="66dp"
+        android:text="@string/revnametext"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditTextLastName"
+        android:layout_alignRight="@+id/showfullname"
+        android:layout_below="@+id/showfullname"
+        android:layout_marginTop="38dp"
+        android:text="@string/fullnametext"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

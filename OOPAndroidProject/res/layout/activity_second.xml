@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="sam.limo.oopandroidproject.SecondActivity" >
+
+    <TextView
+        android:id="@+id/textViewMedical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNumber"
+        android:layout_alignRight="@+id/editTextNumber"
+        android:text="Second Project"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewMedical"
+        android:ems="10"
+        android:hint="ID"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextNumber"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Customer Name" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginRight="31dp"
+        android:onClick="Create"
+        android:text="Create" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextName"
+        android:layout_alignRight="@+id/editTextName"
+        android:layout_below="@+id/create"
+        android:ems="10"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttondeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/amount"
+        android:layout_below="@+id/amount"
+        android:layout_marginTop="26dp"
+        android:onClick="Deposit"
+        android:text="Deposit" />
+
+    <Button
+        android:id="@+id/buttonwithdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttondeposit"
+        android:layout_alignBottom="@+id/buttondeposit"
+        android:layout_alignRight="@+id/amount"
+        android:onClick="Withdraw"
+        android:text="Withdraw" />
+
+    <TextView
+        android:id="@+id/textViewShowInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttondeposit"
+        android:layout_alignRight="@+id/buttonwithdraw"
+        android:layout_below="@+id/buttondeposit"
+        android:layout_marginTop="60dp"
+        android:text="Details"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/nextto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textViewShowInformation"
+        android:layout_marginBottom="20dp"
+        android:onClick="Next"
+        android:text="Next" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nextto"
+        android:layout_alignBottom="@+id/nextto"
+        android:layout_alignLeft="@+id/textViewShowInformation"
+        android:onClick="Back"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/create"
+        android:layout_below="@+id/buttonwithdraw"
+        android:onClick="Show"
+        android:text="Show" />
+
+</RelativeLayout>

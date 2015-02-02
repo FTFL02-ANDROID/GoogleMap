@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OOPAndroidProject</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first">First Name</string>
+    <string name="middle">Middle Name</string>
+    <string name="last">Last Name</string>
+    <string name="fullname">Show Full Name</string>
+    <string name="show">Show</string>
+    <string name="fullnametext">Full Name</string>
+    <string name="revnametext">Reverse Name</string>
+    <string name="next">Next</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    
+    <string name="headmain">First Project</string>
+
+</resources>
